@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Set the character set and viewport for responsiveness -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link to the external CSS file for styling -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Set the title of the page -->
+  <title>T-shirt Shop</title>
+</head>
+
+<body>
+  <!-- Product card container -->
+  <div class="product-card">
+    
+    <!-- Product image with an ID for easy reference in JavaScript -->
+    <img id="productImage" src="black_tshirt.jpg" alt="Black T-shirt">
+
+    <!-- Product details section -->
+    <div class="product-details">
+      <!-- Product title -->
+      <h2>Stylish Cotton T-shirt</h2>
+
+      <!-- Product price with a dynamic display element for updating in JavaScript -->
+      <p class="price">$<span id="displayPrice">19.99</span></p>
+
+      <!-- Size dropdown with options -->
+      <label for="size">Size:</label>
+      <select id="size">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </select>
+
+      <!-- Color dropdown with options -->
+      <label for="color">Color:</label>
+      <select id="color">
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+        <option value="grey">Grey</option>
+      </select>
+
+      <!-- Quantity input field -->
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" value="1" min="1">
+
+      <!-- Add to Cart button -->
+      <button id="addToCart">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Link to the external JavaScript file for interactivity -->
+  <script src="script.js"></script>
+</body>
+
+</html>
